@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        .wrap {width: 100vw; height: 100vh; background-color: #000; position: relative;}
+        .wrapper {width: 150px; height: 150px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+        p {font-family: 'Montserrat', sans-serif; color: #fff; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+        .wrapper img {width: 100%;}
+        .wrapper ul li {opacity: 0;
+            animation: bbb 3s infinite; position: absolute; top: 0; left: 0;
+        }
+        .wrapper ul li:nth-child(1) {animation-delay: 0;}
+        .wrapper ul li:nth-child(2) {animation-delay: 1s;}
+        .wrapper ul li:nth-child(3) {animation-delay: 2s;}
+        @keyframes bbb {
+            0% {opacity: 0;} 
+            5% {opacity: 1;} 
+            25% {opacity: 1;}
+            30% {opacity: 0;} 
+            100% {opacity: 0;} 
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p>Now Loading ... ∂∇∂</p>
+        <div class="wrapper">
+            <ul>
+                <li><img src="1.png" alt="로딩이미지1"></li>
+                <li><img src="2.png" alt="로딩이미지2"></li>
+                <li><img src="3.png" alt="로딩이미지3"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
